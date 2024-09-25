@@ -1,0 +1,32 @@
+{
+	"name": "archivo_inputd",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "conector_ADSL_Datafactory",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "input",
+				"fileSystem": "contenedorproyectofinal"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Cod_Categoria",
+				"type": "String"
+			},
+			{
+				"name": "Nombre",
+				"type": "String"
+			}
+		]
+	}
+}
