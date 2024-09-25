@@ -1,0 +1,9 @@
+{
+	"name": "rogeramez2024",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3b63a546-dedc-4cb5-bb1e-dc51bb2f031c",
+		"tenantId": "be475286-0f3f-46aa-9290-12f63115c1b2"
+	}
+}
