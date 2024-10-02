@@ -1,10 +1,9 @@
 {
-	"name": "ingesta_capabronce_capaplata",
+	"name": "ingesta_capaplata_capaoro",
 	"properties": {
-		"description": "ingesta de la capa bronce a la plata",
 		"activities": [
 			{
-				"name": "Ingestadebronce_aplata",
+				"name": "ingestadeplata_aoro",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -16,10 +15,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/roger_amez@hotmail.com/Ingesta_capabronceplata 2024-09-26 20:50:58"
+					"notebookPath": "/Users/roger_amez@hotmail.com/ingesta_capaplataoro"
 				},
 				"linkedServiceName": {
-					"referenceName": "Cargadebronce_aplata",
+					"referenceName": "cargadeplata_aoro",
 					"type": "LinkedServiceReference"
 				}
 			}
