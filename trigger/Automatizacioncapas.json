@@ -1,0 +1,25 @@
+{
+	"name": "Automatizacioncapas",
+	"properties": {
+		"description": "Job que corre el codigo",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Automatizacion_capas",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-10-02T03:15:00",
+				"timeZone": "SA Pacific Standard Time"
+			}
+		}
+	}
+}
