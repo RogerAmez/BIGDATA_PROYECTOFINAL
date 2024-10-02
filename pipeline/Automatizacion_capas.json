@@ -9,7 +9,7 @@
 					{
 						"activity": "ingesta_desdeinput_hastacapabronce",
 						"dependencyConditions": [
-							"Succeeded"
+							"Completed"
 						]
 					}
 				],
@@ -48,7 +48,7 @@
 					{
 						"activity": "ingesta_capabronce_capaplata",
 						"dependencyConditions": [
-							"Succeeded"
+							"Completed"
 						]
 					}
 				],
@@ -65,6 +65,11 @@
 				}
 			}
 		],
+		"variables": {
+			"Automatizacion": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
