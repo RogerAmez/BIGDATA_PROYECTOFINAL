@@ -1,0 +1,98 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Nombre de instancia de Data Factory",
+			"defaultValue": "rogeramez2024"
+		},
+		"Cargadata_capaplata_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"Cargadata_capaplata\""
+		},
+		"conector_ADSL_Datafactory_accountKey": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accountKey\"de \"conector_ADSL_Datafactory\""
+		},
+		"Cargadebronce_aplata_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"Cargadebronce_aplata\""
+		},
+		"cargadeplata_aoro_accessToken": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accessToken\"de \"cargadeplata_aoro\""
+		},
+		"Cargadata_capaplata_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "@linkedService().token_cargadebronce_plata"
+		},
+		"conector_ADSL_Datafactory_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://rogeramez.dfs.core.windows.net/"
+		},
+		"Cargadebronce_aplata_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0930-001410-b83yy0nn"
+		},
+		"cargadeplata_aoro_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0930-001410-b83yy0nn"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI de la cuenta de almacenamiento que contiene las plantillas de ARM vinculadas."
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Token de SAS para la cuenta de almacenamiento que contiene las plantillas de ARM vinculadas"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "rogeramez2024_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"Cargadata_capaplata_accessToken": {
+						"value": "[parameters('Cargadata_capaplata_accessToken')]"
+					},
+					"conector_ADSL_Datafactory_accountKey": {
+						"value": "[parameters('conector_ADSL_Datafactory_accountKey')]"
+					},
+					"Cargadebronce_aplata_accessToken": {
+						"value": "[parameters('Cargadebronce_aplata_accessToken')]"
+					},
+					"cargadeplata_aoro_accessToken": {
+						"value": "[parameters('cargadeplata_aoro_accessToken')]"
+					},
+					"Cargadata_capaplata_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('Cargadata_capaplata_properties_typeProperties_existingClusterId')]"
+					},
+					"conector_ADSL_Datafactory_properties_typeProperties_url": {
+						"value": "[parameters('conector_ADSL_Datafactory_properties_typeProperties_url')]"
+					},
+					"Cargadebronce_aplata_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('Cargadebronce_aplata_properties_typeProperties_existingClusterId')]"
+					},
+					"cargadeplata_aoro_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('cargadeplata_aoro_properties_typeProperties_existingClusterId')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "rogeramez2024"
+		},
+		"Cargadata_capaplata_accessToken": {
+			"value": ""
+		},
+		"conector_ADSL_Datafactory_accountKey": {
+			"value": ""
+		},
+		"Cargadebronce_aplata_accessToken": {
+			"value": ""
+		},
+		"cargadeplata_aoro_accessToken": {
+			"value": ""
+		},
+		"Cargadata_capaplata_properties_typeProperties_existingClusterId": {
+			"value": "@linkedService().token_cargadebronce_plata"
+		},
+		"conector_ADSL_Datafactory_properties_typeProperties_url": {
+			"value": "https://rogeramez.dfs.core.windows.net/"
+		},
+		"Cargadebronce_aplata_properties_typeProperties_existingClusterId": {
+			"value": "0930-001410-b83yy0nn"
+		},
+		"cargadeplata_aoro_properties_typeProperties_existingClusterId": {
+			"value": "0930-001410-b83yy0nn"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
