@@ -563,7 +563,7 @@
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
-						"frequency": "Minute",
+						"frequency": "Hour",
 						"interval": 5,
 						"startTime": "2024-09-30T03:15:00",
 						"timeZone": "SA Pacific Standard Time"
