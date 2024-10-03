@@ -1,7 +1,7 @@
 {
 	"name": "Automatizacioncapas",
 	"properties": {
-		"description": "Job que corre el codigo",
+		"description": "Job que corre el codigo de las 3 capas y el input",
 		"annotations": [],
 		"runtimeState": "Started",
 		"pipelines": [
@@ -16,7 +16,7 @@
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Minute",
-				"interval": 2,
+				"interval": 5,
 				"startTime": "2024-09-30T03:15:00",
 				"timeZone": "SA Pacific Standard Time"
 			}
