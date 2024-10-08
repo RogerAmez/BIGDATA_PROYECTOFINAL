@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "Job que corre el codigo de las 3 capas y el input",
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -15,8 +15,8 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Hour",
-				"interval": 5,
+				"frequency": "Day",
+				"interval": 24,
 				"startTime": "2024-09-30T03:15:00",
 				"timeZone": "SA Pacific Standard Time"
 			}
